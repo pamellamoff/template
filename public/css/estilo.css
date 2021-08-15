@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 4.4px;
+  text-transform: uppercase; /*faz com que todas as letras fiquem em maiuscúlo*/
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  line-height: 50px;
+  /*text-shadow: 2px 2px 4px #585656e1;*/
+  /*gera uma sombra no texto onde o primeiro parametro diz o valor longitudinal, latitudinal, radius e a cor da sombra*/
+}
+
+hgroup h2, 
+hgroup h4 {
+
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2.41px;
+  font-weight: 400;
+  max-width: 845px;
+  line-height: 30px;
+  margin-top: 20px;
+
+  color: rgba(255, 255, 255, 0.534);
+}
+
+a {
+  text-decoration: none; /*retira a estilização padrão que a tag "a" dá ao texto, ou palavra que ira redirecionar ousuário a outra página*/
+  color: #4d4d4d; /*cor da escrita*/
+}
+
+p {
+  text-align: justify; /*justifica todos os textos do tipo p*/
+  text-indent: 50px; /*identa todo inicio de parágrafo, ou seja, cria um espaçamento para indicar que é um parágrafo*/
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+}
+
+span {
+  display: block; 
+  position: absolute;
+  
+  font-size: 20px;
+  letter-spacing: 0.41px;
+  font-weight: 400;
+  color: white;
+}
+
+body#body {
+  padding: 0px 80px;
+  margin: 0;
+
+  color: #132351;;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: 100px;
+
+  background: url("../images/img_universe.jpg") no-repeat 0px -200px;
+  
+}
+
+hgroup#hgroupTitle h1 {
+  display: block; /*se comporta como um bloco*/
+  /*position: absolute; /*assume posição absoluta em relação ao seu pai, assim o texto fica por cima da imagem e não o contrário*/
+  /*top: 0px;/*posiciono o texto no inicio da página acima da imagem de fundo*/
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2.4px;
+  text-transform: uppercase; /*faz com que todas as letras fiquem em maiuscúlo*/
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  line-height: 38px;
+}
+
+img#imagePlayVideo{
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  margin-top: 100px;
+  border-radius: 12px;
+}
+
+/*Estilização do Menu*/
+nav#menu {
+  display: block; /*com o display block o meu menu poderá flutuar sobre a tela, ou seja, conseguirei posiciona-ló na parte superior a esquerda da página*/
+}
+
+nav#menu h1 {
+  display: none; /*o texto Menu Principal passa a ficar invisível na página, mas semanticamente continua no arquivo*/
+}
+
+nav#menu ul {
+  list-style: none; /*retira-se as bolinhas pretas indicando uma lista, passa a ficar apenas os nomes dos itens*/
+  text-transform: uppercase; /*todas as letras passam a ser maiuscúlas*/
+  text-align: center; /*textos posicionados a esquerda*/
+  position: absolute; /*com a posição absoluta é possível posicionar o menu em qualquer lugar absoluto da página e não apenas dentro do box do nav#menu, como acontece se a posição fosse relative*/
+  top: 16px; /*nenhum espaçamento no top da página*/
+  margin-left: 35.66%; /*posição dos itens a esquerda*/
+}
+
+nav#menu li {
+  display: inline-block; /*os itens serão exibidos um ao lado do outro*/
+  font-size: 16px;
+  font-weight: 500; /*peso da fonte, o quão grossa ela será*/
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px; /*espaçamento entre as letras*/
+  /*margin-right: 30px; /*espaçamento a direita de cada item, para que um fique mais separado do outro*/
+  padding: 10px;
+}
+
+nav#menu a {
+  text-decoration: none; /*retira o sublinhado abaixo dos itens da lista como padrão*/
+  color: white; /*cor da escrita*/
+  transition: 1s; /*ao posicionar o mouse, a linha demorara 0.4 segundos para aparecer*/
+}
+
+nav#menu a:hover {
+  /*todas essas configurações é para adicionar uma linha horizontal abaixo do texto que aparecerá quando o mouse estiver sobre o menu*/
+  border: 8px solid white; /*cria-se uma borda ao redor do box dos itens*/
+  border-top-width: 0px; /*retira a margem de cima*/
+  border-right-width: 0px; /*retira a margem da direta*/
+  border-bottom-width: 3px; /*mantem a margem de baixo com a grossura de 3px*/
+  border-left-width: 0px; /*retira a margem da esquerda*/
+  padding-bottom: 7px; /*cria-se um espaçamento entre o texto e a margem de baixo*/
+}
+
+.collectionCaption {
+  /*essas configurações são feitas para ajustar os textos dentro da classe collectionCaption no main no meio da página*/
+  position: relative;
+  padding-top: 14%;
+  margin-bottom: 15%;
+
+  color:white; /*cor da escrita*/
+}
+
+.collectionCaption h1 {
+  margin-bottom: 0px;
+}
+
+.collectionCaption h3 {
+  display: inline-block;
+  padding-left: 10px;
+  position: relative;
+  bottom: 4px;
+
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 0.41px;
+
+  color: white;
+}
+
+/*Estilização do corpo da página*/
+.container {
+  /*esta classe configura o conteudo total da página abaixo da imagem de fundo do body*/
+  display: block; /*para ser mostrada como um bloco*/
+  
+  float: left; /* para display do tipo block a tag float faz com que o conteúdo flutue, no caso, pelo lado direito*/
+  padding: 48px 0px 0px 0px;
+}
+
+.container h2 {
+  /*essas configurações são para alterar o estilo de fonte e tamanhos dos subtítulos da página*/
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 3.17px;
+  line-height: 40px;
+  position: relative;
+  margin-bottom: 100px;
+  text-transform: none;
+}
+
+.container h3 {
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.17px;
+  line-height: 14px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.container .dividingline hr{
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #132351;
+}
+
+.participants{
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.participants .boxphoto{
+  display: inline-block;
+  position: relative;
+  width: 500px;
+}
+
+table#tablespec {
+  /*aqui é configurado a estilização da tabela, espaços entre as bordas, e centralizão na página*/
+  border-spacing: 0px; /*retira o espaço entre os textos e a borda*/
+  margin-left: auto;/*centralia á esquerda*/
+  margin-right: auto;/*centralia á direita*/
+  padding-top: 36px;/*espaçamento entre a tabela e o caption da tabela*/
+}
+
+table#tablespec td {
+  /*aqui é estilizado as células de dados das linhas da tabela, borda de baixo e espaçamento entre as paredes das bordas*/
+  border-bottom: 1px solid #4d4d4d2d;
+  padding: 10px; /*cria um espaço interno entre as células e a borda*/
+  vertical-align: middle;/*o texto fica alinhado ao centro verticalmente*/
+}
+
+table#tablespec td.opacity {
+  /*deixa o texto mais claro daqueles que possuirem a classe class="opacity"*/
+  color: #4d4d4d8d;
+}
+
+table#tablespec td.borderless {
+  /*retira a borda de baixo dos elementos da tabela que possuem a classe class="borderless"*/
+  border-bottom: 0px;
+}
+
+table#tablespec caption span {
+  /*aqui é feito as configurações para o texto span no subtítulo da tabela*/
+  display: block;/*o span passa a ser apresentado em bloco*/
+  float: right;/*o bloco sai e flutua sobre a página a direita*/
+  margin-top: 5px;/*aumenta a margem do top*/
+  font-weight: bold;/*deixa o texto em negrito*/
+  font-size: 11px;/*tamanho da fonte*/
+}
+
+/*Estilização de imagens*/
+figure.fotoLegenda {
+  border: 8px solid white; /*gera uma borda entre o box figure e a imagem, assim há um espaço entre a foto e a sombra preta gerada pelo box-shadow abaixo*/
+  box-shadow: 1px 1px 4px black; /*gera uma sombra ao redor do box*/
+  position: relative; /*position: relative especifica uma posição relativa do elemento em relação ao seu pai. A posição é definida através de quatro outras propriedades: top, bottom, left e right.*/
+  margin-bottom: 48px;
+}
+
+figure.fotoLegenda img {
+  width: 100%; /*a img passa a ocupar toda a largura/comprimento que o box figure tem*/
+  height: 100%; /*a img passa a ocupar toda a altura que o box figure tem*/
+}
+
+figure.fotoLegenda figcaption {
+  opacity: 0; /*a legenda não aparece mais em cima da foto, apenas quando o mouse repousar sobre ela*/
+  position: absolute; /*aqui a legenda tera ocupação absoluta dentro do box figure.fotoLegenda. 
+    Ela faz com que o elemento “saia” da hierarquia estabelecida pelo HTML – na prática, ele é filho da página e não de um elemento qualquer no HTML definido. Assim, é possível posicionarmos esse elemento em qualquer lugar da página, independentemente do que temos lá.*/
+  top: 0px; /*a legenda ficará localizada na parte superior do box figure.fotoLegenda*/
+  /*apenas com essa estilização a legenda vai para o top da página, pois o box figure não tinha até então definido sua posição como relativa. Isso foi feito depois para corrigir esse erro.*/
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /*fundo do box em preto com uma transparência leve */
+  color: white; /*escrita do texto em branco*/
+  width: 100%;
+  height: 100%;
+  padding: 10px; /*espaçamento interno, dentro do box, entre o texto e os limites do box figcation*/
+  box-sizing: border-box; /*aqui é feito um box dentro do próprio box figcation para que a legenda respeite melhor o espaço da imagem, ou seja, preencha apenas a imagem toda e não pegue as bordas*/
+  transition: opacity 1s; /*o tempo que a transição de opacidade de 0 para 1 leva para aparecer*/
+}
+
+figure.fotoLegenda figcaption:hover {
+  opacity: 1; /*a legenda aparece sobre a foto assim que o mouse repousar sobre ela*/
+}
+
+aside#lateral {
+  /*aqui é configurado o bloco da direita na página*/
+  display: block;/*para ser mostrada como um bloco*/
+  width: 350px; /*tamanho da largura que ocupara na página*/
+  float: right; /*para display do tipo block a tag float faz com que o conteúdo flutue, no caso, pelo lado direito*/
+  padding: 48px 0px 0px 0px;
+  margin-right: -48px;
+}
+
+aside#lateral h1 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1.17px;
+  line-height: 50px;
+  text-align: left;
+}
+
+aside#lateral h2{
+  /*essas configurações são para alterar o estilo de fonte e tamanhos dos subtítulos da página*/
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1.17px;
+  line-height: 35px;
+  position: relative;
+  margin-bottom: 36px;
+  text-transform: none;
+}
+
+footer#rodape {
+  /*aqui é configurado a aparição do rodapé na página*/
+  clear: both;/*aqui a divisão em blocos é limpa e o contéudo é mostrado abaixo dessa separação.*/
+}
+
+footer#rodape p{
+  /*configura o  contéudo p (paraágrafo) do rodapé*/
+  text-align: center; /*centraliza na página o texto*/
+}
